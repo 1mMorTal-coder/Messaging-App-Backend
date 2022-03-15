@@ -14,7 +14,7 @@ const io = require("socket.io")(server, {
 });
 
 io.on("connection", (socket) => {
-  console.log("A new Connection made", socket.id);
+  // console.log("A new Connection made", socket.id);
 
   socket.on("sendMessage", (messageInfo) => {
     let messageList = require("./data/messageList.json");
@@ -95,6 +95,8 @@ io.on("connection", (socket) => {
 app.get("/", (req, res) => {
   console.log("request received");
   res.send("hola");
+  // ldijuhaiuh
+  // lnf;er;rf
 });
 
 server.listen(port, () => {
