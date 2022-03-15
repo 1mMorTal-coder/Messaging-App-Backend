@@ -95,7 +95,6 @@ io.on("connection", (socket) => {
 app.get("/", (req, res) => {
   console.log("request received");
   res.send("hola");
-  // res
 });
 
 server.listen(port, () => {
